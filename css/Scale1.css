@@ -1,0 +1,45 @@
+img.scaled:hover {
+    -webkit-transform : scale(2);
+    transform : scale(2);
+    -webkit-border-radius: 50%;
+    position: relative;
+    -webkit-animation: move 3s;  /* Safari and Chrome */
+    -webkit-animation-iteration-count: 1;  /* Safari and Chrome */
+    animation: move 3s;
+    animation-iteration-count: 1;
+}
+img.rotate:hover{
+    -webkit-transform : rotate(45deg);
+    transform : rotate(45deg);
+    -webkit-border-radius: 65%;
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes move {
+    from {top: 0px;scale(2);}
+    to {top: 200px; left: 400px; -webkit-transform : rotate(180deg);}
+}
+
+@keyframes move {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 200px;
+    }
+}
+
+img.translate:active {
+    -webkit-border-radius: 85%;
+    -webkit-transform : translate(100px, 50px);
+    transform : translate(100px, 50px);
+}
+img.skew:hover{
+    -webkit-transform :skew(10deg, 30deg);
+    transform :skew(10deg, 30deg);
+    -webkit-border-radius: 90%;
+}
+body
+{
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to(#00f));
+}
