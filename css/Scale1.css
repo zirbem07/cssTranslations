@@ -12,6 +12,7 @@ img.rotate:hover{
     -webkit-transform : rotate(45deg);
     transform : rotate(45deg);
     -webkit-border-radius: 65%;
+    border: 5px, solid, orange;
 }
 
 /* Safari and Chrome */
